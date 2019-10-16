@@ -22,7 +22,6 @@ Download the UUA Server.
 
 By default, UAA reads configuration from uaa.yml on its classpath.
 
-
 http://localhost:8888/uaa/login
 
 username: user1
@@ -32,6 +31,16 @@ Verify that the uaa is up and running:
 ```
 http://localhost:8888/uaa/info
 ```
+
+We need to install uaac:
+
+```
+sudo gem install cf-uaac
+```
+
+
+1 - We need to register a new Client (App with UAA).
+
 
 
 
