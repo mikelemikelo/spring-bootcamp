@@ -32,10 +32,28 @@ Verify that the uaa is up and running:
 http://localhost:8888/uaa/info
 ```
 
+Need to make sure that Ruby is up and running.
+
+```
+Ruby -v
+```
+
 We need to install uaac:
 
 ```
 sudo gem install cf-uaac
+```
+
+Once, has been installed, we need to run the next command, to point it to our UAA :
+
+```
+uaac target http://localhost:8080/uaa
+```
+
+
+Before creating our first client, we need to authenticate a valid user against UAA.
+
+```
 ```
 
 
