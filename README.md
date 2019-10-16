@@ -38,3 +38,9 @@ openssl genrsa -out signingkey.pem 2048
 openssl rsa -in signingkey.pem -pubout -out verificationkey.pem
 
 ```
+
+The authorization server will sign the JWT with the private key, and our client and resource server will verify that signature with the public key.
+
+we could specify these in uaa.yml via the jwt.token.signing-key and jwt.token.verification-key properties.
+
+
