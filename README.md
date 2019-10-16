@@ -1,8 +1,12 @@
 # spring-bootcamp
 
+UAA.
 
+The Data source configuration where the UAA is going to store information about clients, will be using HSQLDB.
 
 HSQLDB - Hyper SQL DB -  Database engine which offers both in-memory and disk-based tables. Both embedded and server modes are available.
+
+
 
 Set up the UAA.
 
