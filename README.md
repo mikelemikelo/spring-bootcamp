@@ -28,6 +28,13 @@ http://localhost:8888/uaa/login
 username: user1
 password: password
 
+Verify that the uaa is up and running:
+```
+http://localhost:8888/uaa/info
+```
+
+
+
 JSon Web Token (JWT) - https://jwt.io/
 
 
