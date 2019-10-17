@@ -65,3 +65,22 @@ uaac token client get admin -s adminsecret
 ```
 
 
+Now, operating as admin, we can register a client named webappclient with client add:
+
+```
+uaac client add webappclient -s webappclientsecret \ 
+--name WebAppClient \ 
+--scope resource.read,resource.write,openid,profile,email,address,phone \ 
+--authorized_grant_types authorization_code,refresh_token,client_credentials,password \ 
+--authorities uaa.resource \ 
+--redirect_uri http://localhost:8081/login/oauth2/code/uaa
+```
+
+Adding a user, defined as appuser with appusersecret.
+```
+uaac user add appuser -p appusersecret --emails appuser@acme.com
+
+```
+
+
+
