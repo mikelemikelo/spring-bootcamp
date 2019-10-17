@@ -82,5 +82,16 @@ uaac user add appuser -p appusersecret --emails appuser@acme.com
 
 ```
 
+Adding two groups:
+```
+uaac group add resource.read
+uaac group add resource.write
+```
+
+And finally, we'll assign these groups to appuser with member add:
+```
+uaac member add resource.read appuser
+uaac member add resource.write appuser
+```
 
 
