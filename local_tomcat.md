@@ -58,5 +58,10 @@ Download and install UAAC -> Uaa CLI tool:
 uaac target http://localhost:8080/uaa
 ```
 
+We need to authenticate as Admin, to start using UAA.
+
+```
+uaac token client get admin -s adminsecret
+```
 
 
