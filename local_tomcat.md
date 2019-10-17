@@ -94,4 +94,36 @@ uaac member add resource.read appuser
 uaac member add resource.write appuser
 ```
 
+Create the Spring Boot Client application: (run it on 8081)
+
+Application.properties
+```
+#registration
+spring.security.oauth2.client.registration.uaa.client-id=webappclient
+spring.security.oauth2.client.registration.uaa.client-secret=webappclientsecret
+spring.security.oauth2.client.registration.uaa.scope=resource.read,resource.write,openid,profile
+
+#provider
+spring.security.oauth2.client.provider.uaa.issuer-uri=http://localhost:8080/uaa/oauth/token
+
+
+#Updating port to 8081 , since 8080 its being used by out Identity Server
+server.port=8081
+
+```
+
+Spring boot app:
+```
+package com.modelop.bootcamp;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class Application {
+
+    public static void main(String[] args) {
+        SpringApplication.run(Application.class, args);
+    }
+}
+```
 
