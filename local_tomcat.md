@@ -24,6 +24,17 @@ Download default uaa.yml
 https://raw.githubusercontent.com/cloudfoundry/uaa/4.30.0/uaa/src/main/resources/required_configuration.yml
 ```
 
+Define Spring Profile:
+```
+export SPRING_PROFILES="default,hsqldb"
+```
+
+Generate JWT keys:
+```
+openssl genrsa -out signingkey.pem 2048
+openssl rsa -in signingkey.pem -pubout -out verificationkey.pem
+```
+
 
 
 Download War:
