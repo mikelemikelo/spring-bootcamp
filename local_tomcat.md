@@ -45,3 +45,6 @@ Download War:
 ```
 http://central.maven.org/maven2/org/cloudfoundry/identity/cloudfoundry-identity-uaa/4.30.0/
 ```
+
+Change name to uaa.war
+
