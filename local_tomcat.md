@@ -48,3 +48,15 @@ http://central.maven.org/maven2/org/cloudfoundry/identity/cloudfoundry-identity-
 
 Change name to uaa.war
 
+Start tomcat:
+```
+catalina.sh
+```
+Download and install UAAC -> Uaa CLI tool:
+
+```
+uaac target http://localhost:8080/uaa
+```
+
+
+
