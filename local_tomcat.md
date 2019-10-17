@@ -50,7 +50,7 @@ Change name to uaa.war
 
 Start tomcat:
 ```
-catalina.sh
+catalina.sh run
 ```
 Download and install UAAC -> Uaa CLI tool:
 
