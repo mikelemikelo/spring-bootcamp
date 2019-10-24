@@ -216,3 +216,17 @@ POM file:
 
 </project>
 ```
+
+
+
+
+## For notification Server:
+
+```
+uaac client add notification-service -s notification-service-secret \ 
+--name notification-service \ 
+--scope resource.read,resource.write,openid,profile,email,address,phone \ 
+--authorized_grant_types authorization_code,refresh_token,client_credentials,password \ 
+--authorities uaa.resource \ 
+--redirect_uri http://localhost:8081/login/oauth2/code/uaa
+
